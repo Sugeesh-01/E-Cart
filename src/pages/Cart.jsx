@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
   return (
@@ -37,6 +38,12 @@ const Cart = () => {
                 </tbody>
 
             </table>
+
+                <div className='float-right mt-5'>
+                                    <button className='bg-red-600 rounded p-2 text-white'>Empty Cart</button>
+                                    <Link to={'/'} className='bg-blue-600 ms-3 rounded p-2 text-white'>Shop More...</Link>
+                </div>
+
 
         </div>
 
